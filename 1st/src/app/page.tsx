@@ -3,6 +3,7 @@
 'use client'; // Required for hooks like useState in FaqSection
 
 import React from 'react';
+import ExpertSection from '@/components/landing/ExpertSection'
 
 // Import all the newly created landing page components
 import CtaButton from '@/components/landing/CtaButton';
@@ -17,6 +18,7 @@ import WorkflowSection from '@/components/landing/WorkflowSection';
 import FaqSection from '@/components/landing/FaqSection';
 import InterestSection from '@/components/landing/InterestSection';
 import Footer from '@/components/landing/Footer';
+
 
 // The main home page component that assembles the entire page
 export default function HomePage() {
