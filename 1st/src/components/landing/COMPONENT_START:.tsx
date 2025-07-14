@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
-import { ChevronRight, CheckCircle2, Star } from 'lucide-react';
-
-// COMPONENT_START: CtaButton USES:ChevronRight
+import React from 'react';
 const CtaButton = ({ text }) => (
   <button className="bg-gradient-to-r from-pink-500 to-orange-500 text-white font-bold py-4 px-8 rounded-full inline-flex items-center space-x-2 text-lg hover:shadow-xl transition-shadow transform hover:scale-105">
     <span>{text}</span>
     <ChevronRight className="h-6 w-6" />
   </button>
 );
-// COMPONENT_END: CtaButton
-
-// COMPONENT_START: Header
+import React from 'react';
 const Header = () => (
   <header className="flex justify-between items-center py-6">
     <div className="text-xl font-bold tracking-tight">thimirathenuwara.com</div>
@@ -21,9 +16,7 @@ const Header = () => (
     </nav>
   </header>
 );
-// COMPONENT_END: Header
-
-// COMPONENT_START: HeroSection
+import React from 'react';
 const HeroSection = () => (
   <section className="text-center py-16 md:py-24">
     <div className="max-w-4xl mx-auto mb-10">
@@ -38,9 +31,7 @@ const HeroSection = () => (
     </h1>
   </section>
 );
-// COMPONENT_END: HeroSection
-
-// COMPONENT_START: PartnerSection
+import React from 'react';
 const PartnerSection = () => (
   <section className="text-center py-16">
     <p className="text-sm font-semibold text-gray-500 tracking-widest uppercase">Your perfect Ghost partner.</p>
@@ -69,9 +60,7 @@ const PartnerSection = () => (
     </div>
   </section>
 );
-// COMPONENT_END: PartnerSection
-
-// COMPONENT_START: SwitchSection USES:CheckCircle2
+import React from 'react';
 const SwitchSection = () => (
   <section className="py-16">
     <div className="flex flex-col md:flex-row items-center gap-12">
@@ -91,9 +80,7 @@ const SwitchSection = () => (
     </div>
   </section>
 );
-// COMPONENT_END: SwitchSection
-
-// COMPONENT_START: ExpertSection
+import React from 'react';
 const ExpertSection = () => (
   <section className="py-16">
     <div className="flex flex-col md:flex-row items-center gap-12 bg-gray-50 rounded-2xl p-8 md:p-12">
@@ -115,9 +102,7 @@ const ExpertSection = () => (
     </div>
   </section>
 );
-// COMPONENT_END: ExpertSection
-
-// COMPONENT_START: TestimonialSection USES:Star
+import React from 'react';
 const TestimonialSection = () => (
   <section className="py-16">
     <div className="max-w-3xl mx-auto bg-white border border-gray-200 rounded-xl p-8 md:p-12">
@@ -134,9 +119,7 @@ const TestimonialSection = () => (
     </div>
   </section>
 );
-// COMPONENT_END: TestimonialSection
-
-// COMPONENT_START: ProjectsSection
+import React from 'react';
 const ProjectsSection = () => (
   <section className="text-center py-16">
     <p className="text-sm font-semibold text-gray-500 tracking-widest uppercase">My Projects</p>
@@ -149,9 +132,7 @@ const ProjectsSection = () => (
     </div>
   </section>
 );
-// COMPONENT_END: ProjectsSection
-
-// COMPONENT_START: WorkflowSection
+import React from 'react';
 const WorkflowSection = () => (
   <section className="text-center py-16">
     <p className="text-sm font-semibold text-gray-500 tracking-widest uppercase">My Workflow</p>
@@ -176,11 +157,9 @@ const WorkflowSection = () => (
     </div>
   </section>
 );
-// COMPONENT_END: WorkflowSection
-
-// COMPONENT_START: FaqSection USES:useState
+import React from 'react';
 const FaqSection = () => {
-    const [openFaq, useState] = React.useState(null);
+    const [openFaq, useState] = useState(null);
     const faqs = [
         { q: "How much does a website cost?", a: "The cost depends on the project scope. Get in touch for a custom quote." },
         { q: "How long does it take?", a: "A typical project takes around 4-6 weeks from start to launch." },
@@ -209,9 +188,7 @@ const FaqSection = () => {
         </section>
     );
 };
-// COMPONENT_END: FaqSection
-
-// COMPONENT_START: InterestSection USES:CtaButton
+import React from 'react';
 const InterestSection = () => (
   <section className="text-center py-24">
     <div className="bg-gray-800 text-white rounded-2xl p-12">
@@ -223,9 +200,7 @@ const InterestSection = () => (
     </div>
   </section>
 );
-// COMPONENT_END: InterestSection
-
-// COMPONENT_START: Footer
+import React from 'react';
 const Footer = () => (
   <footer className="flex flex-col md:flex-row justify-between items-center py-8 border-t border-gray-200 text-gray-500">
     <p>© 2025 Thimira Thenuwara. All rights reserved.</p>
@@ -235,9 +210,7 @@ const Footer = () => (
     </div>
   </footer>
 );
-// COMPONENT_END: Footer
-
-// COMPONENT_START: HomePage
+import React from 'react';
 export default function HomePage() {
   return (
     <div className="bg-white font-sans text-gray-800 antialiased">
@@ -262,4 +235,3 @@ export default function HomePage() {
     </div>
   );
 }
-// COMPONENT_END: HomePage
